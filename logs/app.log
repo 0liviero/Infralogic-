@@ -1,0 +1,12 @@
+2025-05-06 12:45:39 [INFO] Użytkownik admin zalogował się pomyślnie.
+2025-05-06 12:59:11 [INFO] Użytkownik admin dodał pomyślnie nowy rekord do tabeli printers: {"name":"hp","ip_address":"172.70.80.160","mac_address":"29-1C-29-65-F0-71","location":"Biuro pi\u0119tro"}
+2025-05-06 13:05:22 [INFO] Użytkownik admin dodał pomyślnie nowy rekord do tabeli printers: {"name":"HP DesingJet 640 (PLOTTER)","ip_address":"192.168.111.63","mac_address":"64:4E:D7:F5:8B:68","location":"Biuro pi\u0119tro"}
+2025-05-06 15:02:02 [INFO] Użytkownik admin zalogował się pomyślnie.
+2025-05-12 15:30:16 [WARNING] Nieudana próba logowania dla użytkownika admin.
+2025-05-12 15:30:16 [WARNING] Nieudana próba logowania dla użytkownika admin z adresu IP: 172.70.70.109. Powód: Nieprawidłowy login lub hasło.
+2025-05-12 15:30:22 [INFO] Użytkownik admin zalogował się pomyślnie.
+2025-05-12 15:30:43 [INFO] Użytkownik admin wyeksportował dane z tabeli printers w formacie XLS.
+2025-05-12 15:31:16 [INFO] Użytkownik admin wyeksportował dane z tabeli printers w formacie CSV.
+2025-05-12 15:31:21 [INFO] Użytkownik admin wyeksportował dane z tabeli printers w formacie JSON.
+2025-05-12 15:40:56 [INFO] Użytkownik oliwier zalogował się pomyślnie.
+2025-05-12 15:41:18 [INFO] Użytkownik oliwier próbował ponownie uzyskać dostęp do strony logowania.

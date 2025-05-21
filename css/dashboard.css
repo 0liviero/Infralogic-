@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+:root {
+    --background-color: #f5f5f5;
+    --header-bg-color: #ffffff;
+    --tile-bg-color: #ffffff;
+    --tile-hover-bg-color: #f0f8ff;
+    --text-color: #333;
+    --primary-color: #224f9a;
+    --tile-border-color: #ddd;
+    --light-border-color: #d0d0d0; 
+}
+
+body.light-mode {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark-mode {
+    --background-color: #1e1e1e;
+    --header-bg-color: #2c2c2c;
+    --tile-bg-color: #333;
+    --tile-hover-bg-color: #444;
+    --text-color: #e8eaed;
+    --primary-color: #c20012; 
+    --tile-border-color: #555;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: var(--header-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+header .logo {
+    height: 80px;
+    animation-name: fadeInLeftBig;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    animation-name: fadeInRightBig;
+}
+
+.user-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: var(--tile-bg-color);
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--text-color);
+    margin: 0;
+    border: 1px solid var(--tile-border-color); 
+    height: 48px; 
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #c20012;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    height: 48px; 
+}
+
+.logout-button:hover {
+    background-color: #a5000f;
+    animation-name: pulse;
+    animation-duration: 1.2s;
+    animation-fill-mode: both; 
+    animation-iteration-count: infinite;
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 80px;
+    animation-delay: 0.5s;
+}
+
+.tile {
+    background-color: var(--tile-bg-color);
+    border: 1px solid var(--tile-border-color);
+    border-radius: 8px;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary-color); 
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--tile-hover-bg-color);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--tile-bg-color); 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--text-color); 
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+footer p {
+    margin: 0;
+}
+
+#theme-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid var(--tile-border-color); 
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+    height: 48px; 
+}
+
+#theme-switch:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); 
+}
+
+#theme-switch svg {
+    display: none;
+    fill: var(--text-color);
+}
+
+body.light-mode #theme-switch svg:nth-child(1) {
+    display: inline;
+}
+
+body.dark-mode #theme-switch svg:nth-child(2) {
+    display: inline;
+}

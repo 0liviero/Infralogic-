@@ -1,0 +1,5 @@
+[12-May-2025 15:31:16 Europe/Warsaw] PHP Deprecated:  fputcsv(): the $escape parameter must be provided as its default value will change in C:\inetpub\ht\includes\functions.php on line 214
+[12-May-2025 15:31:16 Europe/Warsaw] PHP Deprecated:  fputcsv(): the $escape parameter must be provided as its default value will change in C:\inetpub\ht\includes\functions.php on line 216
+[12-May-2025 15:35:18 Europe/Warsaw] PHP Warning:  Undefined array key "role" in C:\inetpub\ht\pages\admin_panel.php on line 6
+[12-May-2025 15:35:51 Europe/Warsaw] PHP Warning:  Undefined array key "role" in C:\inetpub\ht\pages\admin_panel.php on line 6
+[12-May-2025 15:35:54 Europe/Warsaw] PHP Warning:  Undefined array key "role" in C:\inetpub\ht\pages\admin_panel.php on line 6
